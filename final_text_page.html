@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>text emotion detection</title>
+  <link rel="stylesheet" href="text.css"> 
+</head>
+<body>
+  
+  <div class="main-wrapper">
+
+    <div class="emoji-layer" id="emojiLayer"></div>
+
+  <div class="nav-bar">
+    <div class="summary-container">
+      <div class="summary-btn">Quick Guide</div>
+      <div class="summary-tooltip">
+        Step 1 -> Enter the text to be analyzed in the text box. <br/> 
+        <br/> Step 2-> After entering simply press the submit button. <br/> 
+        <br/> Step 3-> Wait for result and there's how its done :)
+      </div>
+    </div>
+    <div class="nav-menu" id="navMenu">
+      <div class="nav-item">MyProfile</div>
+      <div class="nav-item">Feedback</div>
+      <div class="nav-item">Home</div>
+      <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+    </div>
+  </div>
+
+  <div class="side-menu" id="sideMenu">
+    <div class="side-close" onclick="toggleMenu()">✖</div>
+    <ul>
+      <li class="side-option">Terms & Conditions</li>
+      <li class="side-option">FAQs</li>
+      <li class="side-option">Help & Forums</li>
+    </ul>
+  </div>
+
+  <div class="page-content">
+    <div class="display-box">
+      <div class="result-text one" id="outputText"></div>
+      <div class="result-emoji" id="outputEmoji"></div>
+    </div>
+    <div class="input-section">
+      <input class="input-text" type="text" placeholder="Enter the text" />
+      <button class="submit-btn">Submit</button>
+    </div>
+  </div>
+
+  <div id="warningPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <p>Minimum characters requirement not met!</p>
+    <button onclick="closeWarning()">OK</button>
+  </div>
+</div>
+
+<!-- Loading Popup -->
+<div id="loadingPopup" class="popup-overlay hidden">
+  <div class="popup-box">
+    <p>Loading the results...</p>
+    <div class="loading-bar">
+      <div class="loading-fill"></div>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="text_page.js"></script>
+
+</body>
+</html>
+  
