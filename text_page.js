@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fill.style.animation = 'fillBar 5s linear forwards';
 
       setTimeout(() => {
-        fetch("http://127.0.0.1:8000/BaggingML", {
+        fetch("https://audio-api-theta.vercel.app/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
