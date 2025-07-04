@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fill.style.animation = 'fillBar 5s linear forwards';
 
       setTimeout(() => {
-        fetch("https://0c54-2409-4090-3007-a606-90e5-963d-623a-ab73.ngrok-free.app/", {
+        fetch("https://0c54-2409-4090-3007-a606-90e5-963d-623a-ab73.ngrok-free.app/BaggingML", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
