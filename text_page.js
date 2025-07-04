@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fill.style.animation = 'fillBar 5s linear forwards';
 
       setTimeout(() => {
-        fetch("https://audio-api-theta.vercel.app/", {
+        fetch("https://callmeizel--text_api.hf.space/BaggingML/", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
