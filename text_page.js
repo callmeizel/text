@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(res => res.json())
         .then(data => {
-          const emotion = data.emotion.trim().toLowerCase();
+          const emotion = (data.emotion || "unknown").trim().toLowerCase();
           document.getElementById('outputText').innerText = emotion;
 
           const emojiMap = {
@@ -111,7 +111,9 @@ document.addEventListener('DOMContentLoaded', function () {
           document.getElementById('outputEmoji').innerText = emoji;
         })
         .catch(err => {
-          displayBox.innerText = "Try";
+          document.getElementById('outputText').innerText = "Error 😓";
+          document.getElementById('outputEmoji').innerText = "";
+
           console.error(err);
         })
         .finally(() => {
