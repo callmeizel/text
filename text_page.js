@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
       fill.style.animation = 'fillBar 5s linear forwards';
 
       setTimeout(() => {
-        fetch("https://callmeizel--text_api.hf.space/BaggingML/", {
+        fetch("https://d379-49-43-7-157.ngrok-free.app", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
