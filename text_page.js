@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(res => res.json())
         .then(data => {
-          const emotion = (data.emotion || "unknown").trim().toLowerCase();
+          const emotion = data.emotion.trim().toLowerCase();
           document.getElementById('outputText').innerText = emotion;
 
           const emojiMap = {
